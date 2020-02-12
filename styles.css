@@ -1,3 +1,4 @@
-.main-title ._active {
+.main-title ,
+._active {
     color: red;
 }
