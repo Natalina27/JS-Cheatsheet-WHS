@@ -12,3 +12,9 @@ for (let item of titles) {
 const title = document.getElementById('title');
 
 title.hidden = true; // Скрывает элемент
+
+//infoAboutElement
+const id = title.id;
+const type = title.type;
+const value = title.value;
+console.log(id, type, value); // title, undefined, undefined
