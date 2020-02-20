@@ -23,3 +23,7 @@ console.log(id, type, value); // title, undefined, undefined
 title = document.getElementById('title');
 title.innerHTML = 'Это новый заголовок!'; // Добавляем внутрь нашего заголовка новый текст
 document.body.innerHTML = '<p>Это абзац<ul><li>1</li><li>2</li><li>3</li></ul></p>'; // Добавляет внутрь body новую разметку
+
+//outerHTML
+const body = document.body;
+console.log(body.outerHTML); // outerHTML свойство возвращающее всю разметку внутри элемента
