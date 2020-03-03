@@ -1,6 +1,6 @@
 //body
 const body = document.body; // Обращаемся к body
-console.log(body);
+console.log('body = ', body);
 
 
 //children

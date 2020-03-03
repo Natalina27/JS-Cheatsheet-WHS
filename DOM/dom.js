@@ -1,6 +1,6 @@
 //for..of loop
 const titles = document.querySelectorAll('.active');
-console.log(titles );
+console.log('titles = ', titles );
 
 for (let item of titles) {
     console.log(item);
@@ -16,7 +16,7 @@ const title = document.getElementById('title');
 const id = title.id;
 const type = title.type;
 const value = title.value;
-console.log(id, type, value); // title, undefined, undefined
+console.log('id = ', id, type, value); // title, undefined, undefined
 
 //innerHTML
 const container = document.querySelector('.container');
