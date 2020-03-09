@@ -23,3 +23,8 @@ const wrap = title1.closest('.wrap'); // Ищет выше по ирархии �
 console.log(title1);
 console.log(wrap);
 
+//getElementById
+ const title2 = document.getElementById('title');
+ console.log('title2',title2);
+
+
