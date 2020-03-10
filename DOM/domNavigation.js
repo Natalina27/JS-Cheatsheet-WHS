@@ -27,4 +27,9 @@ console.log(wrap);
  const title2 = document.getElementById('title');
  console.log('title2',title2);
 
+ //matches
+let isMainTitle = title.matches('.main-title._active');// Проверяем соответсвует ли текущий элемент данному селектору
+console.log('isMainTitle === .main-title._active', isMainTitle);
+
+
 
