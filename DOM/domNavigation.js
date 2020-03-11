@@ -32,7 +32,7 @@ let isMainTitle = title.matches('.main-title._active');// Проверяем с�
 console.log('isMainTitle === .main-title._active', isMainTitle);
 
 //querySelector
-const title3 = document.querySelector('#title + .main-title');
+const title3 = document.querySelector(  '#title', '.main-title' );
 // Ищет элемент соответствующий данному селектору и возвращает первый попавшийся
 console.log('title3',title3);
 
