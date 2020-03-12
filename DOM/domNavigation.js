@@ -37,5 +37,11 @@ const title3 = document.querySelector(  '#title', '.main-title' );
 console.log('title3',title3);
 
 
+//querySelectorAll
+const titles1 = document.querySelectorAll('#title , .main-title');
+// Ищем все элементы соответствующие данному селектору
+console.log('titles1', titles1);
+
+
 
 
