@@ -16,3 +16,8 @@ console.log('unshift' , dish);
 
 const  favouriteDish = dish.filter(el => el === 'tomato soup'); // условие, которое должно выполниться, чтобы елемент попал в новый массив
 console.log(favouriteDish);
+
+// item-ом будет являться кажды последующий элемент массива от первого до последнего
+dish.forEach(function(item) {
+    console.log(item);
+});
