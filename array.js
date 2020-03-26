@@ -27,10 +27,12 @@ const shop = ['car', 'cat', 'tomato'];
 
 for (let value of shop) { // Проход по каждому елементу последовательно
     console.log('value of shop array : ', value);  // Key будет являться значением элемента
-};
+}
 
 //for...in
 
 for (let index in shop) { // Проход по каждому елементу последовательно
     console.log(' index of shop array : ', index);  // Key будет являться значением элемента
-};
+}
+
+//
