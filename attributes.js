@@ -31,7 +31,17 @@ let link = title;
 link.getAttribute('href');
 link.href;
 
-console.log(link.getAttribute('href'));
-console.log(link.href);
+console.log('link.getAttribute : ', link.getAttribute('href'));
+console.log('link.href: ',link.href);
+
+// Атрибут value можно получить двумя способами // Добавить input
+let input = document.getElementById('input');
+
+input.value;
+input.getAttribute('value');
+
+
+console.log('input.getAttribute: ', input.getAttribute('value'));
+console.log('input.value: ', input.value);
 
 
