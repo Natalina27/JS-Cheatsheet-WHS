@@ -44,4 +44,13 @@ input.getAttribute('value');
 console.log('input.getAttribute: ', input.getAttribute('value'));
 console.log('input.value: ', input.value);
 
+//data attributes
+title.setAttribute('data-info', 'title');
+
+title.getAttribute('data-info');
+let dataTitle = title.dataset.info; // Получать data-атрибуты можно напрямую, указывая их название
+
+console.log('title.dataset.info: ', dataTitle);
+
+
 
