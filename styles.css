@@ -10,3 +10,7 @@
     flex-direction: column;
     height: 100vh;
 }
+
+.main-title_red{
+    border: 1px red solid;
+}
