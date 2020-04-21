@@ -17,3 +17,10 @@ title.classList.toggle('main-title_red'); // Переключает класс
 console.log('title.classList.toggle(\'main-title_red\') : ', title.classList.toggle('main-title_red'));
 
 console.log('title : ', title);
+
+//className
+document.body.className = 'body-layout'; // Установить классы для элемента
+
+const className = document.body.className; // Получить классы элемента
+
+console.log(className);

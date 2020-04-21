@@ -8,9 +8,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
+
 }
 
 .main-title_red{
     border: 1px red solid;
+}
+.body-layout{
+    background-color: rosybrown;
 }
