@@ -1,5 +1,5 @@
-//if else
-let isOpen = true;
+//1. if else
+let isOpen = false;
 let isFree = false;
 
 if (isOpen && isFree) {
@@ -15,3 +15,55 @@ if (isOpen && isFree) {
 // Он аналогичен конструкции ifElse: до знака "?" пишется условие, после код, который выполнится если условие верно, после этого пишется :
 // и код, который выполнится если условие не верно
 console.log(isOpen || isFree ? ('Идем в магазин!') : ('Не идем в магазин :('));
+
+//2. operators
+let wallet = 400;
+let cash = 500;
+
+// Для проверки неравенсва: >, <, >=, <=
+
+let diff = wallet < cash; // Сравниваются числа.
+console.log('diff = ', diff);
+
+
+wallet = '400';
+
+let strDiff = wallet < cash; // При попытке сравнивать другие типы данных (например строки), они неявно приобразуются в ЧИСЛА.
+console.log('strDiff = ', strDiff);
+
+// Для проверки равенства: ==, ===
+
+cash = 400;
+
+let doubleEqual = wallet == cash; // true. При сравнение на равенство происходит неявное приведение к СТРОКАМ, если хотя бы одно из значений строка.
+console.log('doubleEqual = ', doubleEqual);
+
+let tripleEqual = wallet === cash; // false. Проверка равенства с учетом текущего типа данных. Перевода не происходит.
+console.log('tripleEqual= ', tripleEqual);
+
+
+// В отрывке кода ниже ошибка. DRY - WET. Don’t repeat yourself – Write Everything Twice.
+
+ isOpen = true;
+
+if (isOpen) {
+    // Если открыто и все бесплатно, то идем в магазин.
+
+    if (cash > 150) {
+        console.log('Идем в магазин!');
+    } else {
+        console.log('Не идем в магазин :('); // Повторяющийся участок кода
+    }
+
+} else {
+    // Иначе остаемся дома.
+    console.log('Не идем в магазин :('); // Повторяющийся участок кода
+}
+
+// Подсказка: Нужно объединить два условия в одно.
+
+if (isOpen && cash > 150) {
+        console.log('Идем в магазин!');
+    } else {
+        console.log('Не идем в магазин :(');
+}
