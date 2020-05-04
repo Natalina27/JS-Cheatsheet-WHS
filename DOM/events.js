@@ -35,7 +35,7 @@ const _sayHay = function() {
     console.log('click Hi!');
 };
 
-// title.onclick = _sayHay;
+title.onclick = _sayHay;
 
 title.addEventListener('click' , _sayHay); // Добавление обработчика событий
 
